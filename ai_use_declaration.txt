@@ -1,0 +1,79 @@
+Tool: OpenAI Codex
+Purpose: Read the assignment handout, create an initial project/notebook scaffold and estimate effort.
+Prompt: "give me a template folder in downloads to start with. estimate the time needed for this assignment"
+Affected files/sections: Initial notebook headings and checklists, setup cells, src/config.py, README, requirements, report planning notes, folder structure and this declaration.
+Interaction link: [Add if available]
+No experiments were run and no findings were generated during scaffold creation.
+Student review and later AI use: [Record what you checked/changed and add subsequent tools, prompts and affected sections.]
+
+Follow-up — 2026-11-21
+Tool: OpenAI Codex
+Purpose: Restructure the starter notebook to match individual marked bullets in the assignment brief, using A1–A4, B1–B4, C1–C4, D1–D4, E1–E4, F1–F4 and G1–G3.
+Prompt: "separate each part according to the assignment brief like what was done in assignment 1 and 2, like a1 a2, etc"
+Affected sections: Notebook headings, task prompts and code/interpretation placeholders; existing dataset setup/inspection cells moved into A2/A4. No experiments run or results generated.
+
+Concept explanation — 2026-11-21
+Tool: OpenAI Codex
+User prompt: "how to interpret the features in b1 (log this in declaration)"
+Purpose: Explain the nine categorical atom features, three categorical bond features, feature-matrix shapes, and how concatenated one-hot encoding represents categories without numerical ordering.
+Affected sections: B1 — understanding and interpretation of molecular graph features.
+Source: PyTorch Geometric SMILES implementation, https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/utils/smiles.html
+No notebook code changed or experiments run.
+
+Report draft — 2026-11-21
+Tool: OpenAI Codex
+User request: Draft a LaTeX report outline, using Assignment 2 as a style reference.
+Purpose: Read the supplied Assignment 2 LaTeX source and table, create report with similar formatting
+Affected sections: Initial LaTeX report structure.
+No numerical results were invented or experiments run.
+
+Concept explanation — 2026-11-21
+Tool: OpenAI Codex
+User prompt: "what is atom/bond correspondence"
+Purpose: Explain how the same atoms and bonds map between a chemical structure and a node–edge graph, using matching atom indices and a simple connection example.
+Affected sections: B2 interpretation and report/report.tex. No code changes or experiments.
+
+Concept explanation — 2026-11-22
+Tool: OpenAI Codex
+User prompt: "what does the representation capture"
+Purpose: Explain Morgan fingerprints as hashed local atom/bond environments, radius expansion, binary presence versus counts, and limits concerning 3D geometry, disabled chirality and target labels.
+Affected sections: D1 interpretation. No code changes or experiments.
+
+Concept explanation — 2026-11-22
+Tool: OpenAI Codex
+User prompt: "what does labels 1965 mean and the active bits 36"
+Purpose: Interpret user-reported label shape (1965,) and 36 active fingerprint bits; distinguish label-array length from label values, and occupied bits from atoms or unique patterns.
+Affected sections: D1 interpretation. Values supplied by user, not independently verified by execution.
+
+Concept explanation — 2026-11-22
+Tool: OpenAI Codex
+Prompt: "what does WARNING: not removing hydrogen atom without neighbors mean"
+Purpose: Explain RDKit retaining degree-zero explicit hydrogen during hydrogen removal; distinguish warning from failed parsing and explain repeated warnings.
+Source: https://github.com/rdkit/rdkit/blob/master/Code/GraphMol/AddHs.cpp
+Affected sections: A2 representation discussion in report/report.tex. No notebook, molecule data or training changes.
+
+Concept explanation — 2026-11-22
+Tool: OpenAI Codex
+Prompt: "what does scaffold mean in this context"
+Purpose: Explain Bemis–Murcko ring/linker cores, removed side chains, shared benzene example, scaffold grouping versus deduplication, and empty scaffolds for acyclic molecules.
+Affected sections: C1 explanation and report/report.tex. No notebook or data changes.
+
+Concept explanation — 2026-11-22
+Tool: OpenAI Codex
+Prompts: "why in steps of 0.01"; "what is linspace"
+Purpose: Explain equally spaced NumPy values, inclusive endpoints, number of values versus step size, and the 91-point validation-threshold grid.
+Affected sections: D3 explanation and report/report.tex. No code or experimental changes.
+
+Concept explanation — 2026-11-22
+Tool: OpenAI Codex
+Prompt: "what is gine"
+Purpose: Explain edge-aware GIN, atom/bond message passing, two-layer neighborhood reach and molecule-level pooling in the implemented model.
+Source: https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.conv.GINEConv.html
+Affected sections: E1 explanation and report/report.tex. No code changes or reruns.
+
+
+Report language revision — 2026-11-22
+Tool: OpenAI Codex
+Prompt: "i deleted the ref and reproducibility. humanize the language while keeping it professional and recompile. github: https://github.com/ronesync/ENG2440_Assignment_3"
+Purpose: Revise prose into natural professional English while retaining methods and numerical findings; preserve removal of references/reproducibility section; add supplied repository URL; replace orphaned citations with inline source links and remove unmatched bibliography command.
+Affected files: report/report.tex and compiled PDFs. All six pages visually checked. No notebook changes or model reruns.
