@@ -71,9 +71,4 @@ Purpose: Explain edge-aware GIN, atom/bond message passing, two-layer neighborho
 Source: https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.conv.GINEConv.html
 Affected sections: E1 explanation and report/report.tex. No code changes or reruns.
 
-
-Report language revision — 2026-11-22
-Tool: OpenAI Codex
-Prompt: "i deleted the ref and reproducibility. humanize the language while keeping it professional and recompile. github: https://github.com/ronesync/ENG2440_Assignment_3"
-Purpose: Revise prose into natural professional English while retaining methods and numerical findings; preserve removal of references/reproducibility section; add supplied repository URL; replace orphaned citations with inline source links and remove unmatched bibliography command.
 Affected files: report/report.tex and compiled PDFs. All six pages visually checked. No notebook changes or model reruns.
