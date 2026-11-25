@@ -71,4 +71,3 @@ Purpose: Explain edge-aware GIN, atom/bond message passing, two-layer neighborho
 Source: https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.conv.GINEConv.html
 Affected sections: E1 explanation and report/report.tex. No code changes or reruns.
 
-Affected files: report/report.tex and compiled PDFs. All six pages visually checked. No notebook changes or model reruns.
